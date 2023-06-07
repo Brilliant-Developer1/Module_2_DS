@@ -63,23 +63,27 @@ using namespace std;
 int main()
 {
 
-    vector<int> x = {10, 20, 30, 20, 40, 20, 50, 20, 80, 40, 70};
-    vector<int> v = {1, 2, 3, 4, 5};
-
-    // replace(x.begin(), x.end(), 20, 25);
-    // replace(x.begin(), x.begin() + 4, 20, 25);
-
-    // for (int c : x)
+    int n;
+    cin >> n; // input number deyar por enter ignor korte
+    cin.ignore();
+    // vector<string> v; // 1st type
+    // for (int i = 0; i < n; i++)
     // {
-    //     cout << c << " ";
+    //     string s;
+    //     getline(cin, s);
+    //     v.push_back(s);
     // }
 
-    // find jodi khojte deya value pay tahole oi same value it e back dibe na pele 0 back dibe
-    auto it = find(x.begin(), x.end(), 40);
-    if (it == v.end())
-        cout << *it;
-    else
-        cout << *it;
+    vector<string> v(n); // 2nd type
+    for (int i = 0; i < n; i++)
+    {
+        getline(cin, v[i]);
+    }
+
+    for (int i = 0; i < v.size(); i++)
+    {
+        cout << v[i] << "\n";
+    }
 
     return 0;
 }

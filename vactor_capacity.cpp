@@ -64,13 +64,18 @@ int main()
 {
     int input;
     cin >> input;
-    vector<int> v;
+    // vector<int> v;
+    // for (int i = 0; i < input; i++)
+    // {
+    //     int value;
+    //     cin >> value;
+    //     v.push_back(value);
+    // }
 
+    vector<int> v(input);
     for (int i = 0; i < input; i++)
     {
-        int value;
-        cin >> value;
-        v.push_back(value);
+        cin >> v[i];
     }
 
     for (int i = 0; i < v.size(); i++)

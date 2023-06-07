@@ -63,23 +63,25 @@ using namespace std;
 int main()
 {
 
-    vector<int> x = {10, 20, 30, 20, 40, 20, 50, 20, 80, 40, 70};
-    vector<int> v = {1, 2, 3, 4, 5};
+    int n;
+    cin >> n;
+    vector<string> v; // vector string 2d array er moto
+    for (int i = 0; i < n; i++)
+    {
+        string s;
+        cin >> s;
+        v.push_back(s);
+    }
 
-    // replace(x.begin(), x.end(), 20, 25);
-    // replace(x.begin(), x.begin() + 4, 20, 25);
-
-    // for (int c : x)
+    // for (int i = 0; i < v.size(); i++)
     // {
-    //     cout << c << " ";
+    //     cout << v[i] << "\n";
     // }
 
-    // find jodi khojte deya value pay tahole oi same value it e back dibe na pele 0 back dibe
-    auto it = find(x.begin(), x.end(), 40);
-    if (it == v.end())
-        cout << *it;
-    else
-        cout << *it;
+    for (string val : v)
+    {
+        cout << val << endl;
+    }
 
     return 0;
 }
